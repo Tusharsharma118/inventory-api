@@ -6,13 +6,14 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Data
 @Entity
 @Builder
 public class Product {
 
-    Long id;
+    UUID id;
 
     Category category;
 

@@ -1,16 +1,12 @@
-package com.helixcry.inventory.models;
+package com.helixcry.inventory.dtos;
 
 import com.helixcry.inventory.models.constants.UserCategory;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.usertype.UserType;
-
-import javax.persistence.Entity;
 
 @Data
-@Entity
 @Builder
-public class User {
+public class UserDto {
     String userName;
     String encodedPassword;
     String mobileNumber;
